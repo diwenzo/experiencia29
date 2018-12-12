@@ -1,0 +1,8 @@
+# Crear un modelo user con los campos name (string), email (string) y password (string).
+rails g model user name email password
+rails db:migrate
+#  Agregar las rutas tal cual están en el enunciado
+# crear el controlador de users vacio
+rails g controller users
+rails g controller sessions
+

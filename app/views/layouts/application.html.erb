@@ -33,6 +33,13 @@
           <p><%= alert %></p>
         </div>
       <% end %>
+
+      <% if logged? %>
+        Bienvenido <%= current_user.name %>
+      <% end %>
+
+
+
       <%= yield %>
     </div>
   </body>
